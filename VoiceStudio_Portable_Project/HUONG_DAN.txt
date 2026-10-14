@@ -1,0 +1,14 @@
+VoiceStudio Portable EXE — source project
+=========================================
+This project uses Windows SAPI voices and creates MP3 files.
+
+IMPORTANT: This ZIP is the source project, not a precompiled EXE. This environment does not have the Windows .NET build toolchain, so I cannot honestly claim that an EXE has been compiled and tested here.
+
+To build a self-contained EXE without Python or run.bat:
+1. Put these files in a GitHub repository.
+2. Open Actions → “Build VoiceStudio Portable EXE”.
+3. Choose Run workflow.
+4. Download the artifact “VoiceStudio-Portable-Windows-x64”.
+5. Run VoiceStudio.exe on Windows 10/11.
+
+The included GitHub Actions workflow builds the EXE on a Windows runner. The user running the final EXE does not need Python or .NET installed. Requires Windows voices/SAPI. Some Windows installations may not have a suitable Vietnamese SAPI voice installed.
